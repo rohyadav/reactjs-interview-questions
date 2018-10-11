@@ -282,7 +282,7 @@ And finally it renders to the DOM using ReactDOM.render as below,
 ```
 <div id='login-btn'>Login</div>
 ```
-Whereas a **component** can be declared in several different ways. It can be a class with a render() method. Alternatively, in simple cases, it can be defined as a function. In either case, it takes props as an input, and returns an element tree as the output. JSX transpiled as createElement at the end.
+Whereas a **component** can be declared in several different ways. It can be a class with a render() method. Alternatively, in simple cases, it can be defined as a function. In either case, it takes props as an input, and returns an element tree as the output. JSX transpiled it as createElement at the end.
 ```
 function Button ({ onLogin }) {
   return React.createElement(
@@ -304,7 +304,7 @@ There are two possible ways to create ReactJS Components.
 	}
 ```
 
-2. **Class components:** You can also use Es6 class to define component. The above functional component can be written as below,
+2. **Class components:** You can also use ES6 class to define a component. The above functional component can be written as below,
 ```
       class Greeting extends React.Component {
   	    render() {
@@ -315,7 +315,7 @@ There are two possible ways to create ReactJS Components.
 
 6. ### When to use a Class Component over a Functional Component?
 
-If the component need state or lifecycle methods then use class component otherwise use functional component.
+If the component need **state or lifecycle methods** then use class component otherwise use functional component.
 
 7. ### What are Pure Components?
 **PureComponent** is exactly the same as Component except that it handles the shouldComponentUpdate method for you. When props or state changes, PureComponent will do a shallow comparison on both props and state. Component on the other hand won’t compare current props and state to next out of the box. Thus, the component will re-render by default whenever shouldComponentUpdate is called.
